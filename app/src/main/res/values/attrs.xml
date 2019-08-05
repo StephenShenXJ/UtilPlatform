@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Copyright (C) 2013 Lucas Rocha
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+
+
+
+
+-->
+
+<resources>
+
+    <declare-styleable name="TwoWayView">
+
+        <!-- Imported from View -->
+        <attr name="android:id" />
+        <attr name="android:tag" />
+        <attr name="android:scrollX" />
+        <attr name="android:scrollY" />
+        <attr name="android:background" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+        <attr name="android:paddingStart" />
+        <attr name="android:paddingEnd" />
+        <attr name="android:focusable" />
+        <attr name="android:focusableInTouchMode" />
+        <attr name="android:visibility" />
+        <attr name="android:fitsSystemWindows" />
+        <attr name="android:scrollbars" />
+        <attr name="android:scrollbarStyle" />
+        <attr name="android:isScrollContainer" />
+        <attr name="android:fadeScrollbars" />
+        <attr name="android:scrollbarFadeDuration" />
+        <attr name="android:scrollbarDefaultDelayBeforeFade" />
+        <attr name="android:scrollbarSize" />
+        <attr name="android:scrollbarThumbHorizontal" />
+        <attr name="android:scrollbarThumbVertical" />
+        <attr name="android:scrollbarTrackHorizontal" />
+        <attr name="android:scrollbarTrackVertical" />
+        <attr name="android:scrollbarAlwaysDrawHorizontalTrack" />
+        <attr name="android:scrollbarAlwaysDrawVerticalTrack" />
+        <attr name="android:fadingEdge" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+        <attr name="android:nextFocusLeft" />
+        <attr name="android:nextFocusRight" />
+        <attr name="android:nextFocusUp" />
+        <attr name="android:nextFocusDown" />
+        <attr name="android:nextFocusForward" />
+        <attr name="android:clickable" />
+        <attr name="android:longClickable" />
+        <attr name="android:saveEnabled" />
+        <attr name="android:filterTouchesWhenObscured" />
+        <attr name="android:drawingCacheQuality" />
+        <attr name="android:keepScreenOn" />
+        <attr name="android:duplicateParentState" />
+        <attr name="android:minHeight" />
+        <attr name="android:minWidth" />
+        <attr name="android:soundEffectsEnabled" />
+        <attr name="android:hapticFeedbackEnabled" />
+        <attr name="android:contentDescription" />
+        <attr name="android:onClick" />
+        <attr name="android:overScrollMode" />
+        <attr name="android:alpha" />
+        <attr name="android:translationX" />
+        <attr name="android:translationY" />
+        <attr name="android:transformPivotX" />
+        <attr name="android:transformPivotY" />
+        <attr name="android:rotation" />
+        <attr name="android:rotationX" />
+        <attr name="android:rotationY" />
+        <attr name="android:scaleX" />
+        <attr name="android:scaleY" />
+        <attr name="android:verticalScrollbarPosition" />
+        <attr name="android:layerType" />
+        <attr name="android:layoutDirection" />
+        <attr name="android:textDirection" />
+        <attr name="android:textAlignment" />
+
+        <!-- Imported from Android -->
+        <attr name="android:orientation" />
+
+        <!-- Imported from AbsListView -->
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:listSelector" />
+    </declare-styleable>
+    <declare-styleable name="ItemView">
+        <attr name="itemTitle" format="string" />
+        <attr name="itemContent" format="string" />
+        <attr name="itemSize" format="dimension" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="contentTextSize" format="dimension" />
+        <attr name="isCheckable" format="boolean" />
+        <attr name="titleColor" format="color" />
+        <attr name="contentColor" format="color" />
+        <attr name="aligneOrientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="NavigationController">
+        <attr name="navbarItem" format="reference" />
+        <attr name="navbarHeight" format="dimension" />
+        <attr name="navbarWidth" format="dimension" />
+        <attr name="isShowDivider" format="boolean" />
+        <attr name="navdivider" format="reference" />
+        <attr name="maxNavbarItemCount" format="integer" />
+        <attr name="navbarBackground" format="reference" />
+        <attr name="navbarItemTextViewId" format="integer" />
+        <attr name="navbarItemTextSize" format="dimension" />
+        <attr name="navbarItemTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomizedSeekBar">
+        <attr name="multiline" format="boolean" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="barSelectedStartColor" format="color" />
+        <attr name="barSelectedEndColor" format="color" />
+        <attr name="barUnselectedColor" format="color" />
+        <attr name="thrumbColor" format="color" />
+        <attr name="textAlign">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="OSCalendarView">
+        <attr name="dateTextSize" format="dimension" />
+        <attr name="todayBackgroundColor" format="color" />
+        <attr name="selectedDayBackgroundColor" format="color" />
+        <attr name="focusedMonthDateColor" format="color" />
+        <attr name="unfocusedMonthDateColor" format="color" />
+        <attr name="eventFlagColor" format="color" />
+        <attr name="maxDate" format="string" />
+        <attr name="minDate" format="string" />
+        <attr name="calendarMode">
+            <enum name="month" value="0" />
+            <enum name="week" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="OSEventTimeLineView">
+        <attr name="timeLineTitleSize" format="dimension" />
+        <attr name="timeLineTitleColor" format="color" />
+        <attr name="timeLineCommentSize" format="dimension" />
+        <attr name="timeLineCommentColor" format="color" />
+        <attr name="timeLineTimeLabelColor" format="color" />
+        <attr name="timeLineTimeLabelSize" format="dimension" />
+        <attr name="timeLineDividerColor" format="color" />
+        <attr name="timeLineDividerHeight" format="color" />
+        <attr name="timeLineEventBackground" format="color" />
+        <attr name="timeLineAddBackground" format="color" />
+        <attr name="timeLineVerticalDividerColor" format="color" />
+        <attr name="timeLineVerticalDividerWidth" format="dimension" />
+        <attr name="timeLineActiveBackgroundColor" format="color" />
+        <attr name="timeLineInactiveBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="EcoGallery">
+        <attr name="gravity" format="integer" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="unselectedAlpha" format="float" />
+        <attr name="spacing" format="dimension" />
+    </declare-styleable>
+
+    <attr name="ecoGalleryStyle" format="reference" />
+
+    <declare-styleable name="CustomAbsSpinner">
+        <attr name="entries" format="reference" />
+    </declare-styleable>
+
+    <attr name="customAbsSpinnerStyle" format="reference" />
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="trimLength" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="PatternView">
+        <attr name="cellBaseCount" format="integer" />
+        <attr name="cellColor" format="color" />
+        <attr name="cellSpacing" format="dimension" />
+        <!-- If have set the cell radius the cell spacing will be ignored -->
+        <attr name="cellRadius" format="dimension" />
+        <attr name="showPath" format="boolean" />
+    </declare-styleable>
+</resources>

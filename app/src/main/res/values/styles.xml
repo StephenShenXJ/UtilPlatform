@@ -1,0 +1,9 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="ProgressStyle" parent="android:Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/bg_progressbar_shape</item>
+    </style>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/body_bg_margin_left_right"
+    android:paddingRight="@dimen/body_bg_margin_left_right"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <com.shen.stephen.utilplatform.widget.view.ClearableEditText
+        android:id="@+id/list_select_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="@string/list_select_activity_filter_hint"
+        android:textColorHint="@color/default_label_text"
+        android:ems="10"
+        android:inputType="text"
+        android:singleLine="true"
+        android:typeface="normal" />
+
+    <ListView
+        android:id="@+id/list_select_items_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

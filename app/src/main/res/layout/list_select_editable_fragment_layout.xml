@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/body_bg_margin_left_right"
+    android:paddingRight="@dimen/body_bg_margin_left_right"
+    android:paddingTop="@dimen/body_bg_margin_top_bottom">
+
+    <TextView
+        android:id="@+id/select_editable_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingBottom="2dp"
+        android:text="@string/list_select_editable_comments"
+        android:textColor="@color/default_label_text"
+        android:textSize="@dimen/default_font_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.shen.stephen.utilplatform.widget.view.ClearableEditText
+            android:id="@+id/list_select_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_list_select_filter"
+            android:ems="10"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="@color/default_label_text"
+            android:layout_toLeftOf="@+id/list_select_scan_btn"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/list_select_scan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_menu_camera"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/charatcer_number_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingTop="2dp"
+        android:text="label"
+        android:textColor="@color/default_label_text"
+        android:textSize="@dimen/default_font_size_small" />
+
+    <ListView
+        android:id="@+id/list_select_items_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/calendar_event_item_time_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/calendar_event_item_start_end_time"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/calendar_event_item_startTime_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/perkin_selected_dark_blue"
+                android:textSize="@dimen/default_font_size"
+                android:text="@string/calendar_event_all_day_label" />
+
+            <TextView
+                android:id="@+id/calendar_event_item_endTime_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calendar_event_item_startTime_label"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/calendar_event_all_day_label"
+                android:textSize="@dimen/default_font_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/calendar_event_item_allDay_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/calendar_event_all_day_label"
+            android:textColor="@color/perkin_selected_dark_blue"
+            android:textSize="@dimen/default_font_size" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/calendar_event_item_divider"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@color/perkin_selected_dark_blue" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/calendar_event_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/perkin_selected_dark_blue"
+            android:textSize="@dimen/default_font_size" />
+
+        <TextView
+            android:id="@+id/calendar_event_item_creator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_font_size_small" />
+
+        <TextView
+            android:id="@+id/calendar_event_item_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calendar_event_item_title"
+            android:paddingTop="5dp"
+            android:textColor="@color/perkin_selected_dark_blue"
+            android:singleLine="true"
+            android:textSize="@dimen/default_font_size_small" />
+    </RelativeLayout>
+</LinearLayout>

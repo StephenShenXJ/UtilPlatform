@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/body_bg_margin_top_bottom"
+    android:paddingTop="@dimen/body_bg_margin_top_bottom">
+
+    <LinearLayout
+        android:id="@+id/item_view_title_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/item_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/item_view_helper" />
+
+
+        <ImageView
+            android:id="@+id/item_view_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="5dp"
+            android:src="@drawable/ic_help"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_view_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/item_view_style_container"
+        android:layout_toRightOf="@id/item_view_title_container"
+        android:baselineAligned="false"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_view_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/item_view_style_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:baselineAligned="false"
+        android:descendantFocusability="blocksDescendants">
+
+        <ImageView
+            android:id="@+id/item_view_next_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_next" />
+
+        <Switch
+            android:id="@+id/item_view_switcher"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/perkin_light_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="@string/btn_no_text"
+            android:textOn="@string/btn_yes_text" />
+    </FrameLayout>
+</RelativeLayout>

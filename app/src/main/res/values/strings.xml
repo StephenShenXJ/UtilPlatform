@@ -1,0 +1,47 @@
+<resources>
+    <string name="btn_ok_text">OK</string>
+    <string name="btn_cancel_text">Cancel</string>
+    <string name="btn_save_text">Save</string>
+    <string name="btn_yes_text">Yes</string>
+    <string name="btn_continue_text">Continue</string>
+    <string name="btn_no_text">No</string>
+    <string name="btn_yes_text_add">Add Record</string>
+
+    <string name="action_done">Done</string>
+
+    <string name="empty_view_content">No Content</string>
+
+    <string name="progress_loading">loading</string>
+    <string name="calendar_event_all_day_label">All Day</string>
+
+    <!-- Photo picker -->
+    <string name="photo_picker_all_image_btn">All Images</string>
+    <string name="list_select_editable_comments">Please select from the list or type a value in</string>
+    <!-- List select common Activity -->
+    <string name="list_select_activity_filter_hint">Search</string>
+
+    <!-- load more data -->
+    <string name="load_more_footer_text">Loading more</string>
+    <string name="load_more_toast_no_more_items">No more items</string>
+
+    <!-- Permission request string -->
+    <string name="permission_external_storage_rationale">You need to allow access to External storage</string>
+    <string name="permission_location_rationale">You need to allow access to get GPS Location info</string>
+    <string name="permission_common_rationale">You should grant permission</string>
+    <string name="no_permission_to_access_camera">No permission to access Camera.</string>
+    <string name="no_permission_to_access_external_storage">No permission to access external storage.</string>
+    <string name="permission_camera_rationale">You need to grant Camera permission to take picture.</string>
+    <string name="barcode_search_camera_permission_denied">To use Barcode scanning you need to allow access to Camera.</string>
+
+    <!-- Fingerprint -->
+    <string name="fingerprint_description">Confirm fingerprint to continue</string>
+    <string name="fingerprint_hint">Touch sensor</string>
+    <string name="fingerprint_not_recognized">Fingerprint is not recognized. Try again</string>
+    <string name="fingerprint_success">Fingerprint recognized</string>
+    <string name="fingerprint_secure_lock_screen_has_not_set_up">Secure lock screen hasn\'t set up.\nGo to \'Settings -> Security -> Fingerprint\' to set up a fingerprint</string>
+    <string name="fingerprint_has_not_register">Go to \'Settings -> Security -> Fingerprint\' and register at least one fingerprint</string>
+    <string name="fingerprint_use_password_btn">Use Password</string>
+    <string name="sign_in">Sign in</string>
+
+    <string name="instrument_image_total_number">you can only select 10 images each time.</string>
+</resources>

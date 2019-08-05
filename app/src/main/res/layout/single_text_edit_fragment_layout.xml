@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="12dp"
+    android:paddingLeft="@dimen/body_bg_margin_left_right"
+    android:paddingRight="@dimen/body_bg_margin_left_right" >
+
+    <com.shen.stephen.utilplatform.widget.view.ClearableEditText
+        android:id="@+id/single_text_edit_input_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edit_text"
+        android:ems="10"
+        android:inputType="text"
+        android:singleLine="true"
+        android:typeface="normal" >
+
+        <requestFocus android:layout_width="wrap_content" />
+    </com.shen.stephen.utilplatform.widget.view.ClearableEditText>
+
+    <TextView
+        android:id="@+id/single_text_edit_left_length_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/single_text_edit_input_view"
+        android:paddingTop="5dp"
+        android:textColor="@color/default_label_text"
+        android:textSize="@dimen/default_font_size_small" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="navigation_controller_nav_bar" />
+    <item type="id" name="navigation_controller_content" />
+    <item type="id" name="navigation_controller_nav_bar_item0" />
+    <item type="id" name="navigation_controller_nav_bar_item1" />
+    <item type="id" name="navigation_controller_nav_bar_item2" />
+    <item type="id" name="navigation_controller_nav_bar_item3" />
+    <item type="id" name="navigation_controller_nav_bar_item4" />
+    <item type="id" name="navigation_controller_nav_bar_item5" />
+    <item type="id" name="navigation_controller_nav_bar_item6" />
+    
+    <!-- The id of system id item view in tag details screen. -->
+    <item type="id" name="tag_detail_system_id" />
+
+    <!-- The id of system id item view in tag details screen. -->
+    <item type="id" name="event_calendar_view_swipe_refresh_layout" />
+</resources>

@@ -49,7 +49,7 @@ public class ListSelectorDialog extends BaseDialog {
                 ARGS_KEY_ITEMS);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        String leftButton = getString(R.string.button_cancel);
+        String leftButton = getString(R.string.btn_cancel_text);
         if (!StrUtil.isEmpty(leftButton))
             builder.setNegativeButton(leftButton, new OnClickListener() {
                 @Override
